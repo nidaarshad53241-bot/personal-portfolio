@@ -757,3 +757,31 @@ footer p:first-child {
         font-size: 48px;
     }
 }
+/* ================================
+   JAVASCRIPT ANIMATIONS
+================================ */
+
+.skill-card,
+.project-card,
+.experience-card,
+.education-card,
+.about-text,
+.contact-item {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.skill-card.show,
+.project-card.show,
+.experience-card.show,
+.education-card.show,
+.about-text.show,
+.contact-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.active-link {
+    color: var(--secondary) !important;
+}
